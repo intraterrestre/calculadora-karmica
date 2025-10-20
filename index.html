@@ -34,6 +34,10 @@
   .row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
   a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
   a:hover{opacity:.9}
+  footer{margin-top:40px; text-align:center; padding:20px; border-top:1px solid #00ff00; font-family:'Courier New', monospace;}
+  footer .links{display:flex; justify-content:center; gap:15px; flex-wrap:wrap;}
+  footer .links a{color:#00ff00; text-decoration:none; border:1px solid #00ff00; border-radius:8px; padding:10px 16px; background:rgba(0,30,0,0.8); transition:.3s;}
+  footer .links a:hover{opacity:.9}
 </style>
 </head>
 <body>
@@ -47,60 +51,81 @@
     </p>
   </header>
 
- <section class="card" style="margin-top:14px">
-  <h2>Explicación breve para quien no conoce budismo</h2>
-  <p>
-    En la tradición budista se habla de tres fuerzas mentales que mantienen a los seres atrapados en el ciclo del
-    sufrimiento (<em>Samsara</em>): <strong>Ignorancia</strong>, <strong>Deseo</strong> y <strong>Aversión</strong>.
-    Se las llama “tres venenos” porque oscurecen la percepción y alimentan nuestras reacciones automáticas.
-  </p>
-  <p>
-    En esta calculadora las usamos como una <strong>mecánica simbólica y pedagógica</strong>: al combinar un veneno
-    con un <em>reino</em> (estado mental) y con ciertos <em>nidanas</em> (eslabones causales), se obtiene un
-    multiplicador que refleja cómo cada elección puede intensificar o suavizar las consecuencias dentro del juego.
-  </p>
+  <section class="card" style="margin-top:14px">
+    <h2>Explicación breve para quien no conoce budismo</h2>
+    <p>
+      En la tradición budista se habla de tres fuerzas mentales que mantienen a los seres atrapados en el ciclo del
+      sufrimiento (<em>Samsara</em>): <strong>Ignorancia</strong>, <strong>Deseo</strong> y <strong>Aversión</strong>.
+      Se las llama “tres venenos” porque oscurecen la percepción y alimentan nuestras reacciones automáticas.
+    </p>
+    <p>
+      En esta calculadora las usamos como una <strong>mecánica simbólica y pedagógica</strong>: al combinar un veneno
+      con un <em>reino</em> (estado mental) y con ciertos <em>nidanas</em> (eslabones causales), se obtiene un
+      multiplicador que refleja cómo cada elección puede intensificar o suavizar las consecuencias dentro del juego.
+    </p>
 
-  <h3 style="margin-top:12px; color:#00ff00;">Reinos como estados mentales</h3>
-  <ul style="margin-left:20px;">
-    <li><strong>Devas</strong> — comodidad que adormece</li>
-    <li><strong>Asuras</strong> — rivalidad y orgullo</li>
-    <li><strong>Humanos</strong> — equilibrio y posibilidad de despertar</li>
-    <li><strong>Animales</strong> — instinto y hábito inconsciente</li>
-    <li><strong>Pretas</strong> — carencia y deseo sin fin</li>
-    <li><strong>Infierno</strong> — rabia y sufrimiento intenso</li>
-  </ul>
+    <h3 style="margin-top:12px; color:#00ff00;">Reinos como estados mentales</h3>
+    <ul style="margin-left:20px;">
+      <li><strong>Devas</strong> — comodidad que adormece</li>
+      <li><strong>Asuras</strong> — rivalidad y orgullo</li>
+      <li><strong>Humanos</strong> — equilibrio y posibilidad de despertar</li>
+      <li><strong>Animales</strong> — instinto y hábito inconsciente</li>
+      <li><strong>Pretas</strong> — carencia y deseo sin fin</li>
+      <li><strong>Infierno</strong> — rabia y sufrimiento intenso</li>
+    </ul>
 
-  <h3 style="margin-top:12px; color:#00ff00;">Nidanas como procesos internos</h3>
-  <p>
-    Las <em>12 Nidanas</em> representan los pasos con que la mente fabrica la experiencia: desde la
-    <strong>Ignorancia</strong> inicial hasta el <strong>Renacimiento</strong> y la <strong>Muerte</strong>. Entenderlas
-    permite reconocer dónde surgen nuestras decisiones automáticas.
-  </p>
+    <h3 style="margin-top:12px; color:#00ff00;">Nidanas como procesos internos</h3>
+    <p>
+      Las <em>12 Nidanas</em> representan los pasos con que la mente fabrica la experiencia: desde la
+      <strong>Ignorancia</strong> inicial hasta el <strong>Renacimiento</strong> y la <strong>Muerte</strong>. Conocer las nidanas 
+      te permite detectar de dónde surgen nuestras decisiones automáticas, muchas veces fatales.
+    </p>
 
-  <p class="muted" style="margin-top:12px;">
-    No buscamos deformar la enseñanza, sino acercarla. Aunque no conozcas el budismo, tu mirada puede aportar algo
-    valioso al experimento curvista.
-  </p>
+    <p class="muted" style="margin-top:12px;">
+      No buscamos deformar la enseñanza, sino acercarla. Aunque no conozcas el budismo, tu mirada puede aportar algo
+      valioso al experimento curvista.
+    </p>
 
-  <p style="margin-top:10px;">
-    🔍 <a href="https://sage-custard-592036.netlify.app/diccionario/" target="_blank"
-          style="color:#00ff00; font-weight:bold; text-decoration:none;">
-      Para mayor información revisa los términos budistas en el <strong>Diccionario Curvista</strong>.
-    </a>
-  </p>
-</section>
+    <p style="margin-top:10px;">
+      <a href="https://sage-custard-592036.netlify.app/diccionario/" target="_blank"
+         style="color:#00ff00; font-weight:bold; text-decoration:none;">
+        Para mayor información revisa los términos budistas en el <strong>Diccionario Curvista</strong>.
+      </a>
+    </p>
+  </section>
 
-<div class="grid grid-2" style="margin-top:14px">
-      <h3 style="margin-top:10px">Nidanas sugeridas (elige 1–3)</h3>
-      <div id="nidanasBox" class="nidanas"></div>
+  <!-- PARÁMETROS VENENOSOS -->
+  <section class="card" style="margin-top:14px">
+    <h2>Parámetros venenosos</h2>
 
-      <hr class="sep">
-      <div class="row"><div>Multiplicador venenoso</div><div class="out mono" id="multOut">1.000</div></div>
-      <div class="row"><div>Límite de seguridad</div><div class="mono">0.70 — 1.40</div></div>
-      <p class="muted">Fórmula: peso del veneno × promedio de pesos de nidanas × ajuste del reino.</p>
-    </section>
+    <label for="veneno">Veneno</label>
+    <select id="veneno">
+      <option value="ignorancia">Ignorancia (cerdo)</option>
+      <option value="deseo">Deseo/Apego (gallo)</option>
+      <option value="aversion">Aversión/Odio (serpiente)</option>
+    </select>
 
-    <!-- Aplicación -->
+    <label for="reino" style="margin-top:8px">Reino</label>
+    <select id="reino">
+      <option value="devas">Devas</option>
+      <option value="asuras">Asuras</option>
+      <option value="humanos" selected>Humanos</option>
+      <option value="animales">Animales</option>
+      <option value="pretas">Pretas</option>
+      <option value="infierno">Infierno</option>
+    </select>
+
+    <h3 style="margin-top:10px">Nidanas sugeridas (elige 1–3)</h3>
+    <div id="nidanasBox" class="nidanas"></div>
+
+    <hr class="sep">
+    <div class="row"><div>Multiplicador venenoso</div><div class="out mono" id="multOut">1.000</div></div>
+    <div class="row"><div>Límite de seguridad</div><div class="mono">0.70 — 1.40</div></div>
+    <p class="muted">Fórmula: cúanta fuerza mental ejerce el veneno × promedio de pesos situacionales de cada nidana × ajuste del reino.</p>
+  </section>
+
+  <div class="grid grid-2" style="margin-top:14px">
+    <!-- APLICACIÓN -->
     <section class="card">
       <h2>Aplicación</h2>
 
@@ -127,33 +152,34 @@
       <div class="row"><div>Multiplicador</div><div class="mono" id="rMult">—</div></div>
       <div class="row"><div>Consec. final</div><div class="out mono" id="rFinal">—</div></div>
     </section>
+
+    <!-- JUSTIFICACIÓN -->
+    <section class="card">
+      <h2>Por qué estos pesos y ajustes</h2>
+      <p>
+        Están basados en la función que cada veneno cumple en la rueda del Samsara y en su relación con ciertas nidanas
+        según comentarios tradicionales. Es un punto de partida para debatir, no un dogma.
+      </p>
+      <ul>
+        <li><strong>Ignorancia (1.10):</strong> raíz principal del ciclo, efecto difuso/estructural → peso medio-alto.</li>
+        <li><strong>Deseo (1.20):</strong> empuja a actuar y engancharse → peso más alto.</li>
+        <li><strong>Aversión (1.15):</strong> corta y endurece → impacto intermedio, severo en contextos específicos.</li>
+      </ul>
+      <p>
+        Nidanas asociadas: Ignorancia → 1–3; Deseo → 7–9; Aversión → 6,10–12. 
+        Cada nidana pesa ~1.00–1.30 (Trishna/Upadana más altas).
+      </p>
+      <p>
+        Ajuste por reino: sesgos de −0.3 a +0.2 (Infierno más severo, Devas más benigno) para evitar distorsiones grandes.
+      </p>
+      <p class="note">
+        Invitación explícita: si discrepas con algún peso o mapeo, explica por qué y propón alternativas. 
+        Este prototipo está en modo tormenta de ideas. Habla ahora o karma para siempre.
+      </p>
+    </section>
   </div>
 
-  <section class="card" style="margin-top:14px">
-    <h2>Por qué estos pesos y ajustes</h2>
-    <p>
-      Están basados en la función que cada veneno cumple en la rueda del Samsara y en su relación con ciertas nidanas
-      según comentarios tradicionales. Es un punto de partida para debatir, no un dogma.
-    </p>
-    <ul>
-      <li><strong>Ignorancia (1.10):</strong> raíz principal del ciclo, pero su efecto suele ser difuso y estructural; por eso el peso es medio-alto.</li>
-      <li><strong>Deseo (1.20):</strong> empuja a actuar y engancharse; eleva la intensidad, de ahí un peso más alto.</li>
-      <li><strong>Aversión (1.15):</strong> corta, separa y endurece; impacto intermedio pero más severo en ciertos contextos.</li>
-    </ul>
-    <p>
-      Nidanas asociadas: Ignorancia → 1–3; Deseo → 7–9; Aversión → 6,10–12. 
-      A cada una se le asigna un peso entre 1.00 y ~1.30 según su potencia causal (p. ej., Trishna/Upadana más altos).
-    </p>
-    <p>
-      Ajuste por reino: pequeños sesgos de −0.3 a +0.2 (Infierno más severo, Devas más benigno) para evitar distorsiones grandes.
-    </p>
-    <p class="note">
-      Invitación explícita: si discrepas con algún peso o mapeo, explica por qué y propón alternativas. 
-      Este prototipo está en modo tormenta de ideas. Habla ahora o karma para siempre.
-    </p>
-  </section>
-
-  <!-- Feedback -->
+  <!-- FEEDBACK (ÚNICO FORMULARIO) -->
   <section class="card" style="margin-top:14px">
     <h2>Tu opinión importa</h2>
     <p class="muted">
@@ -162,7 +188,7 @@
       recibirá el aviso por email desde Netlify Forms.
     </p>
 
-    <form name="feedback-venenos" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html">
+    <form name="feedback-venenos" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="./gracias.html">
       <input type="hidden" name="form-name" value="feedback-venenos">
       <p style="display:none"><label>No completar: <input name="bot-field"></label></p>
 
@@ -318,51 +344,18 @@ reinoSel.addEventListener('change', actualizarMultiplicador);
 renderNidanas();
 actualizarMultiplicador();
 </script>
-<!-- ===== FOOTER DE ENLACES ===== -->
-<footer style="margin-top:40px; text-align:center; padding:20px; border-top:1px solid #00ff00; font-family:'Courier New', monospace;">
+
+<!-- ===== FOOTER ===== -->
+<footer>
   <p style="color:#88ff88; margin-bottom:8px;">Explora más del universo Samsaragammon:</p>
-
-  <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-
-    <a href="about.html" 
-       style="color:#00ff00; text-decoration:none; border:1px solid #00ff00; border-radius:8px; padding:10px 16px; background:rgba(0,30,0,0.8); transition:0.3s;">
-       📘 Acerca del Proyecto
-    </a>
-
-    <a href="https://federicogarcia.art" target="_blank" 
-       style="color:#00ff00; text-decoration:none; border:1px solid #00ff00; border-radius:8px; padding:10px 16px; background:rgba(0,30,0,0.8); transition:0.3s;">
-       🌐 Web Oficial
-    </a>
-
-    <a href="https://federicogarcia.art/descubriendo-linea-temporal-olvidada/" target="_blank" 
-       style="color:#00ff00; text-decoration:none; border:1px solid #00ff00; border-radius:8px; padding:10px 16px; background:rgba(0,30,0,0.8); transition:0.3s;">
-       📖 Libro en Amazon
-    </a>
+  <div class="links">
+    <a href="about.html">Acerca del Proyecto</a>
+    <a href="https://federicogarcia.art" target="_blank">Web Oficial</a>
+    <a href="https://federicogarcia.art/descubriendo-linea-temporal-olvidada/" target="_blank">Libro</a>
   </div>
-
   <p style="color:#007700; font-size:0.9em; margin-top:18px; opacity:0.8;">
     © 2025 Federico García — Proyecto educativo y experimental Curvism™.
   </p>
 </footer>
-<form name="feedback-venenos" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/gracias.html">
-  <input type="hidden" name="form-name" value="feedback-venenos">
-  <p style="display:none">
-    <label>No completar: <input name="bot-field"></label>
-  </p>
-
-  <label>Nombre / tradición (opcional)
-    <input type="text" name="autor">
-  </label>
-
-  <label>Correo (opcional)
-    <input type="email" name="email">
-  </label>
-
-  <label>Observaciones
-    <textarea name="comentarios" rows="5"></textarea>
-  </label>
-
-  <button type="submit">Enviar comentarios</button>
-</form>
 </body>
-</html>Mon 20 Oct 2025 10:52:47 BST
+</html>
